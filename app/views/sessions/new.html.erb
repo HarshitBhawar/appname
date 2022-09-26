@@ -1,0 +1,27 @@
+<h1>Login</h1>
+
+
+<%= form_with model: @yuser do |form| %>
+ 
+  
+
+  <div>
+    <%= form.label :username %><br>
+    <%= form.text_field :username %><br>
+   
+  </div>
+
+    <div>
+    <%= form.label :password %><br>
+    <%= form.password_field :password %><br>
+    
+  </div>
+ 
+  
+  <div>
+    <%= form.submit "Login" %>
+  </div>
+<% end %>
+<br>
+
+<%= link_to "Register here", new_yuser_path %>
